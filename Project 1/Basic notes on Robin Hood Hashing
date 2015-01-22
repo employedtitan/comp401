@@ -1,0 +1,15 @@
+Notes on the Robin Hood Hash table
+-Functions
+	-Public
+		-Add()-add items to the hash table- calls Hash()
+		-Delete()-take items out of the table- calls nothing
+		-Print()- Print out all the items in the table(possibly with their search times as well)
+		-Search()- search the table for one item
+		
+	-Private
+		-Move()- Move the items in the hash table if a item with a larger search effort took their spot
+		-Hash()- decide where the item goes in the table based on
+		-Compare() - compares the search effort(amount of times it has moved due to not finding a unoccupied spot) of two items if there is a conflict 
+-Classes
+	-Table- contains all of the data(stored in Packets with their search times) and functions will navigate it
+	-Packet- contains the inputed data and the search effort(an int that will increment as alternatives to the original spot are tried)
