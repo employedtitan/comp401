@@ -26,7 +26,7 @@ hashTable::hashTable(float a, int displayit, int sizeIwant)
     for(int x = 0; x<desiredarraysize; x++)
     {
 
-        table[x].word = " ";
+        table[x].word = NULL;
         table[x].collisions = 0;
         table[x].totalreadin = 0;
     }
@@ -45,16 +45,17 @@ hashTable::~hashTable()
 template <class type>
 void hashTable::insert(string tobeheld)
 {
-    //A method to insert a string into the hashTable object
+    //A method to insert data into the hashTable object
 
 
     bool hasbeenstored = false;
+    type tempA = NULL; //used to store varaibles while switching for robin hood hashing
     int numberofcollisions = 0;
     int x;
     x = hash(tobeheld);
 
 
-    if(this->table[x].word != " ")
+    if(this->table[x].word != NULL)
     {
 
 
@@ -68,10 +69,19 @@ void hashTable::insert(string tobeheld)
 
         }
 
+        else
+        {
+            numberofcollisions++;
+            totalcollisionsz++;
+            tempA = table[x].word;
+            tempB = table[x].collisions;
+            tempC = table[x].totalreadin;
+
+        }
 
 
-      numberofcollisions++;
-      totalcollisionsz++;
+
+
 
       x = x + (numberofcollisions * numberofcollisions);
 
