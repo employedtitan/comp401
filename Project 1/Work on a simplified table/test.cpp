@@ -1,13 +1,14 @@
 
-#include "hashTable.h"
+#include "text.h"
 
 
 
 
-template <class type>
+
 hashTable::hashTable(float a, int displayit, int sizeIwant)
 {
     //Method to initilize the hashTable object
+
 
     this->A = a;
     this->tobedisplayed = displayit;
@@ -26,7 +27,7 @@ hashTable::hashTable(float a, int displayit, int sizeIwant)
     for(int x = 0; x<desiredarraysize; x++)
     {
 
-        table[x].word = NULL;
+        table[x].word = " ";
         table[x].collisions = 0;
         table[x].totalreadin = 0;
     }
@@ -42,20 +43,20 @@ hashTable::~hashTable()
 
 }
 
-template <class type>
-void hashTable::insert(string tobeheld)
+
+void hashTable::insert(int tobeheld)
 {
-    //A method to insert data into the hashTable object
+    //A method to insert a string into the hashTable object
+
 
 
     bool hasbeenstored = false;
-    type tempA = NULL; //used to store varaibles while switching for robin hood hashing
     int numberofcollisions = 0;
     int x;
-    x = hash(tobeheld);
+  x = hash(tobeheld);
 
 
-    if(this->table[x].word != NULL)
+    if(this->table[x].word != " ")
     {
 
 
@@ -63,25 +64,14 @@ void hashTable::insert(string tobeheld)
 
        if(this->table[x].word ==tobeheld)
         {
-            //A check to see if the data occupying the spot is the same as the data being added
+            //A check to see if the word occupying th espot is the same as the one being added
 
         this->table[x].totalreadin++;
 
         }
 
-        else
-        {
-            numberofcollisions++;
-            totalcollisionsz++;
-            tempA = table[x].word;  //temp storing the struct maybe do this as a struct
-            tempB = table[x].collisions;
-            tempC = table[x].totalreadin;
-
-        }
-
-
-
-
+      numberofcollisions++;
+      totalcollisionsz++;
 
       x = x + (numberofcollisions * numberofcollisions);
 
@@ -129,7 +119,7 @@ void hashTable::insert(string tobeheld)
 
 }
 
-int hashTable::hash(string tobehashed)
+int hashTable::hash(int tobehashed)
 {
 
     //Method to find the correct index for a word being inserted into the hashTable using the formula (
@@ -167,7 +157,8 @@ void hashTable::display()
     int i = 0;
     int g = 0;
     //A method to display a select amount of word from the hashTable (number chosen by user)
-
+    //Precondition:hashTable object created
+    //Postcondition:Contents of hashTable object displayed
     cout<<"Index"<<setw(15)<<"Word"<<setw(15)<<"Count"<<setw(15)<<"Collisions"<<endl;
     cout<<"---------------------------------------------------"<<endl;
   while (g <tobedisplayed)
