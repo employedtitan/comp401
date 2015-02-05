@@ -15,15 +15,15 @@ int main()
     float a;
     int displayit;
 
-    tablesize = 1000;
+    tablesize = 25;
 
-    a = 7;
+    a = 0.125;
 
 
     displayit = 15;
 
 
-    filename = 'test.txt'
+    filename = "test.txt";
 
     ifstream fin;
 

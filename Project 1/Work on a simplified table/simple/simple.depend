@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1423160392 source:c:\users\user\documents\github\comp401\project 1\work on a simplified table\main.cpp
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<string.h>
+	"text.h"
+
+1423158602 c:\users\user\documents\github\comp401\project 1\work on a simplified table\text.h
+	<iostream>
+	<string.h>
+	<stdlib.h>
+	<iomanip>
+
+1423160506 source:c:\users\user\documents\github\comp401\project 1\work on a simplified table\test.cpp
+	"text.h"
+

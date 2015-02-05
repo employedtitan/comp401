@@ -1,4 +1,4 @@
-
+#ifndef HASHTABLE
 #define HASHTABLE
 
 #include<iostream>

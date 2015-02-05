@@ -53,7 +53,7 @@ void hashTable::insert(string tobeheld)
     bool hasbeenstored = false;
     int numberofcollisions = 0;
     int x;
-  x = hash(tobeheld);
+    x = hash(tobeheld);
 
 
     if(this->table[x].word != " ")
@@ -124,13 +124,13 @@ int hashTable::hash(string tobehashed)
 
     //Method to find the correct index for a word being inserted into the hashTable using the formula (
 
-    float key;
+  int key;
 
-  for(int i = 0; i<tobehashed.length();i++)
-  {
-      key +=tobehashed[i];
+  int numbah = atoi(tobehashed.c_str());
 
-  }
+
+  key += numbah;
+
 
   int theend;
 
@@ -143,7 +143,7 @@ int hashTable::hash(string tobehashed)
   whole = indeices;
 
   indeices -= whole;
-
+  cout<<indeices<<"\n";
   indeices *= desiredarraysize;
 
   theend = indeices;
@@ -157,8 +157,6 @@ void hashTable::display()
     int i = 0;
     int g = 0;
     //A method to display a select amount of word from the hashTable (number chosen by user)
-    //Precondition:hashTable object created
-    //Postcondition:Contents of hashTable object displayed
     cout<<"Index"<<setw(15)<<"Word"<<setw(15)<<"Count"<<setw(15)<<"Collisions"<<endl;
     cout<<"---------------------------------------------------"<<endl;
   while (g <tobedisplayed)
