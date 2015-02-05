@@ -15,19 +15,15 @@ int main()
     float a;
     int displayit;
 
-    cout<<"Please enter your desired table size: ";
-    cin>>tablesize;
+    tablesize = 1000;
 
-    cout<<"Please enter your desired constant for the hash function: ";
-    cin>>a;
+    a = 7;
 
 
-    cout<<"Please enter how many items you would like displayed: ";
-    cin>>displayit;
+    displayit = 15;
 
 
-    cout<<"Please enter the filename: ";
-    cin>>filename;
+    filename = 'test.txt'
 
     ifstream fin;
 

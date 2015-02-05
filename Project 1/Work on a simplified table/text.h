@@ -20,7 +20,7 @@ using namespace std;
 
 struct hashTablestore
 {
-    int word;
+    string word;
     int collisions;
     int totalreadin;
 
@@ -32,9 +32,9 @@ public:
     hashTable(float, int, int);
 
     ~hashTable();
-    int hash(int);
+    int hash(string);
 
-    void insert(int);
+    void insert(string);
 
     void display();
 

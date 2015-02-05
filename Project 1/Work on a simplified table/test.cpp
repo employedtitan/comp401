@@ -44,7 +44,7 @@ hashTable::~hashTable()
 }
 
 
-void hashTable::insert(int tobeheld)
+void hashTable::insert(string tobeheld)
 {
     //A method to insert a string into the hashTable object
 
@@ -119,7 +119,7 @@ void hashTable::insert(int tobeheld)
 
 }
 
-int hashTable::hash(int tobehashed)
+int hashTable::hash(string tobehashed)
 {
 
     //Method to find the correct index for a word being inserted into the hashTable using the formula (
