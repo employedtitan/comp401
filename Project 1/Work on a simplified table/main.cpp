@@ -15,7 +15,7 @@ int main()
     float a;
     int displayit;
 
-    tablesize = 25;
+    tablesize = 2000;
 
     a = 0.125;
 

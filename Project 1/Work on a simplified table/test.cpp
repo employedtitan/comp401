@@ -124,7 +124,7 @@ int hashTable::hash(string tobehashed)
 
     //Method to find the correct index for a word being inserted into the hashTable using the formula (
 
-  int key;
+  int key = 0;
 
   int numbah = atoi(tobehashed.c_str());
 
@@ -161,12 +161,14 @@ void hashTable::display()
     cout<<"---------------------------------------------------"<<endl;
   while (g <tobedisplayed)
     {
-        i++;
+
         if(table[i].word != " ")
         {
            cout<<i<<setw(15)<<table[i].word<<setw(15)<<table[i].totalreadin<<setw(15)<<table[i].collisions<<endl;
            g++;
+           i++;
         }
+        i++;
 
     }
 }

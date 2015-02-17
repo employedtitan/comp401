@@ -9,11 +9,20 @@
 
 using namespace std;
 
-struct hashTablestore
+class entry
 {
-    string word;
-    int collisions;
-    int totalreadin;
+public:
+
+    entry(string, int, int);
+
+    ~entry();
+
+    addcon();
+
+    adddou();
+
+    swapout();
+
 
 };
 
