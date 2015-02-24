@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1424801187 source:c:\users\user\documents\college\dummy2\hashtable.cpp
+	"Hashtable.h"
+
+1424797830 c:\users\user\documents\college\dummy2\hashtable.h
+	<iostream>
+	<string.h>
+	<stdlib.h>
+	<iomanip>
+
+1424798459 source:c:\users\user\documents\college\dummy2\main.cpp
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<string.h>
+	"Hashtable.h"
+

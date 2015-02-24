@@ -9,31 +9,30 @@
 
 using namespace std;
 
-struct entry
+template <class type>
+struct hashTablestore
 {
-
-    string word;
-    int displacementvalue;
-    int totalreadin;
-
+    type word;
+    type collisions;
+    type totalreadin;
 
 };
 
-class hashTable
+template <class type> class hashTable
 {
 public:
-    hashTable(float, int, int);
+    type hashTable(type, type, type);
 
     ~hashTable();
-    int hash(string);
 
-    void insert(string);
+    type hash(type);
+
+    void robinHood();
+
+    void insert(type);
 
     void display();
 
-    int searchit(string);
-
-    void delentry(string);
 
 
 protected:
@@ -48,9 +47,8 @@ protected:
 
     int desiredarraysize; //The size that the user desires for their array
 
-    entry* table;
+    hashTablestore* table;
 
     int totalcollisionsz;
 };
 #endif // HASHTABLE
-

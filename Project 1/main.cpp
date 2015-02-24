@@ -2,31 +2,35 @@
 #include<stdlib.h>
 #include<fstream>
 #include <string.h>
-#include "WibergA_6.h"
+#include "Hashtable.h"
 
 using namespace std;
 
 int main()
 {
-    string tempcontain;
-    string filename;
+    string tempcontain;//A varible for the words from the file
+    string filename;//A varible to hold the filename
 
     int tablesize;
     float a;
     int displayit;
 
-    tablesize == 100; //Size of the table
+    cout<<"Please enter your desired table size: ";
+    cin>>tablesize;
 
-    a = 17; //Hash function constant
+    cout<<"Please enter your desired constant for the hash function: ";
+    cin>>a;
 
 
-    displayit == 15; //items to be displayed
+    cout<<"Please enter how many items you would like displayed: ";
+    cin>>displayit;
 
 
-    filename == 'test.txt' //file to be read in
+    cout<<"Please enter the filename: ";
+    cin>>filename;
 
     ifstream fin;
-
+    int please;
     fin.open(filename.c_str());
 
     if(fin.fail())
@@ -50,5 +54,9 @@ int main()
 
     }
 
+
     T.display();
+    T.delentry("the");
+    please = T.searchit("the");
 }
+
