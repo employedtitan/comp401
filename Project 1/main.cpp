@@ -15,19 +15,15 @@ int main()
     float a;
     int displayit;
 
-    cout<<"Please enter your desired table size: ";
-    cin>>tablesize;
+    tablesize = 100;
 
-    cout<<"Please enter your desired constant for the hash function: ";
-    cin>>a;
+    a = 0.618;
 
 
-    cout<<"Please enter how many items you would like displayed: ";
-    cin>>displayit;
+    displayit = 20;
 
 
-    cout<<"Please enter the filename: ";
-    cin>>filename;
+    filename = "collisiontest.txt";
 
     ifstream fin;
     int please;
@@ -57,6 +53,6 @@ int main()
 
     T.display();
     T.delentry("the");
-    please = T.searchit("the");
+    T.searchit("the");
 }
 

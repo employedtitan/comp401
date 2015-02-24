@@ -85,17 +85,15 @@ void hashTable::insert(string tobeheld)
         }
 
 
-      //totalcollisionsz++;
 
-      //x = x + (numberofcollisions * numberofcollisions);
-
-      while(hasbeenstored)
+      while(hasbeenstored == false)
     {
         x++;
         helddis++;
       //while the string has not been stored
       if(originx == x)
       {
+
           //a conditional to check if the table has returned to the original hash position, exits the method
           cout<<"I'm sorry but it seems your table has no space, ending program..."<<endl;
           exit(-1);
@@ -108,6 +106,7 @@ void hashTable::insert(string tobeheld)
       {
           //if statement to wrap around if the end of the table is reached
          x -= desiredarraysize;
+
       }
 
       else if(this->table[x].word != " ")
@@ -116,6 +115,7 @@ void hashTable::insert(string tobeheld)
           {
               //if statement to check if the object is already stored int he table, if so increments the totalreadin by 1
               table[x].totalreadin++;
+              hasbeenstored = true;
           }
           else if(this->table[x].displacementvalue < helddis)
           {
@@ -146,6 +146,9 @@ void hashTable::insert(string tobeheld)
           this->table[x].word = tobeheld;
           this->table[x].displacementvalue = helddis;
           this->table[x].totalreadin = total;
+
+          //ends the loop
+          hasbeenstored = true;
       }
      }
 
@@ -155,6 +158,7 @@ void hashTable::insert(string tobeheld)
 
   else
   {
+
       //if the first spot the table hashes to is empty this is executed
       this->table[x].word = tobeheld;
       this->table[x].displacementvalue = helddis;
@@ -241,13 +245,16 @@ int hashTable::searchit(string tobesearched)
         {
             x++;
             totalsearched++;
-
-            if(x > desiredarraysize)
+            //cout<<x<<endl;
+            if(x == desiredarraysize)
             {
+                //if x hits the end of the table loops back around to check the beginning
                 x -=desiredarraysize;
+
             }
             if(x == originx)
             {
+                //if x gets back to the place it originally hashed to search ends
                 cout<<"Your querry is not in the table..."<<endl;
                 break;
             }
@@ -255,7 +262,7 @@ int hashTable::searchit(string tobesearched)
 
         cout<<"Found "<<table[x].word<<endl;
         cout<<"It was stored "<<table[x].totalreadin<<" times"<<endl;
-
+        //returns an int so it can be used in the delete method
         return(x);
 
     }
@@ -267,10 +274,11 @@ void hashTable::delentry(string tobedel)
 {
     int x;
 
+    //uses the searchit method to search the list for the entry specified by the user
     x = searchit(tobedel);
 
+    //replaces the data held in the table with the data originally held when the table was created so this spot can be used again
     table[x].word = " ";
-    cout<<table[x].word<<endl;
     table[x].totalreadin = 0;
     table[x].displacementvalue = 0;
 }
