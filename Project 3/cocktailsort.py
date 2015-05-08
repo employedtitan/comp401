@@ -42,7 +42,7 @@ def cocktail_sort(alist):
 def populate(emptylist):
     #populates the list with 100 random numbers
     
-    for x in range(0 ,100):
+    for x in range(0 ,10000):
         y = random.randint(0, 1000)
         emptylist.append(y)
         
