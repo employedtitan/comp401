@@ -1,0 +1,558 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "geolookup": 1
+  ,
+  "conditions": 1
+  }
+	}
+		,	"location": {
+		"type":"CITY",
+		"country":"US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"state":"MA",
+		"city":"Norton",
+		"tz_short":"EDT",
+		"tz_long":"America/New_York",
+		"lat":"41.97221375",
+		"lon":"-71.18708801",
+		"zip":"02766",
+		"magic":"1",
+		"wmo":"99999",
+		"l":"/q/zmw:02766.1.99999",
+		"requesturl":"US/MA/Norton.html",
+		"wuiurl":"http://www.wunderground.com/US/MA/Norton.html",
+		"nearby_weather_stations": {
+		"airport": {
+		"station": [
+		{ "city":"Taunton", "state":"MA", "country":"US", "icao":"KTAN", "lat":"41.87556076", "lon":"-71.02111053" }
+		,{ "city":"Norwood", "state":"MA", "country":"US", "icao":"KOWD", "lat":"42.19123077", "lon":"-71.17326355" }
+		,{ "city":"Pawtucket", "state":"RI", "country":"US", "icao":"KSFZ", "lat":"41.92076492", "lon":"-71.49137878" }
+		,{ "city":"East Milton", "state":"MA", "country":"US", "icao":"KMQE", "lat":"42.21207047", "lon":"-71.11416626" }
+		]
+		}
+		,
+		"pws": {
+		"station": [
+		{
+		"neighborhood":"Wheaton College",
+		"city":"Norton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTO10",
+		"lat":41.965969,
+		"lon":-71.183197,
+		"distance_km":0,
+		"distance_mi":0
+		},
+		{
+		"neighborhood":"Bryson Pond",
+		"city":"Norton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTO11",
+		"lat":41.996906,
+		"lon":-71.170021,
+		"distance_km":3,
+		"distance_mi":1
+		},
+		{
+		"neighborhood":"Fruit Street",
+		"city":"Mansfield",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAMANSF6",
+		"lat":42.002506,
+		"lon":-71.190979,
+		"distance_km":3,
+		"distance_mi":2
+		},
+		{
+		"neighborhood":"Mansfield - Deer Path Lane",
+		"city":"Mansfield",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAMANSF2",
+		"lat":42.011070,
+		"lon":-71.199219,
+		"distance_km":4,
+		"distance_mi":2
+		},
+		{
+		"neighborhood":"Smith st",
+		"city":"Attleboro",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAATTLE3",
+		"lat":41.917587,
+		"lon":-71.232964,
+		"distance_km":7,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Canterbury Woods",
+		"city":"Attleboro",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAATTLE22",
+		"lat":41.942421,
+		"lon":-71.266441,
+		"distance_km":7,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"West Village",
+		"city":"Mansfield",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAMANSF5",
+		"lat":42.023003,
+		"lon":-71.252975,
+		"distance_km":7,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Bungay Lake",
+		"city":"North Attleborough",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTH63",
+		"lat":41.994038,
+		"lon":-71.277512,
+		"distance_km":7,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Black Pond",
+		"city":"Taunton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMATAUNT12",
+		"lat":41.942699,
+		"lon":-71.098297,
+		"distance_km":8,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Fall Brook Fields",
+		"city":"Taunton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMATAUNT1",
+		"lat":41.898930,
+		"lon":-71.138657,
+		"distance_km":9,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"138 Compton Dr.",
+		"city":"Attleboro",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAATTLE15",
+		"lat":41.908642,
+		"lon":-71.265640,
+		"distance_km":9,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"Compton Dr. Attleboro,Ma.",
+		"city":"Attleboro",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAATTLE21",
+		"lat":41.907784,
+		"lon":-71.265411,
+		"distance_km":9,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"Hopewell St.",
+		"city":"Taunton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMATAUNT13",
+		"lat":41.916611,
+		"lon":-71.097183,
+		"distance_km":9,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"Bliss st",
+		"city":"Taunton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMATAUNT15",
+		"lat":41.899899,
+		"lon":-71.111755,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"Dodgeville",
+		"city":"Attleboro",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAATTLE8",
+		"lat":41.915306,
+		"lon":-71.284035,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"Killarney Estates",
+		"city":"Plainville",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAPLAIN2",
+		"lat":42.011101,
+		"lon":-71.307579,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"Bassett St",
+		"city":"Foxborough",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAFOXBO4",
+		"lat":42.059296,
+		"lon":-71.246872,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"North Easton Village",
+		"city":"North Easton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTH19",
+		"lat":42.061401,
+		"lon":-71.100594,
+		"distance_km":12,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"North Dighton",
+		"city":"North Dighton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTH45",
+		"lat":41.867836,
+		"lon":-71.136703,
+		"distance_km":12,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Walnut Street",
+		"city":"West Bridgewater",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAWESTB10",
+		"lat":42.039181,
+		"lon":-71.063591,
+		"distance_km":12,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Weir Village",
+		"city":"Taunton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMATAUNT17",
+		"lat":41.879280,
+		"lon":-71.092064,
+		"distance_km":12,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Lakeview",
+		"city":"Foxborough",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAFOXBO3",
+		"lat":42.072765,
+		"lon":-71.267616,
+		"distance_km":13,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Taunton Ma",
+		"city":"Taunton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMATAUNT3",
+		"lat":41.892731,
+		"lon":-71.058655,
+		"distance_km":13,
+		"distance_mi":8
+		},
+		{
+		"neighborhood":"Myrtle Street",
+		"city":"Wrentham",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAWRENT2",
+		"lat":42.065662,
+		"lon":-71.299004,
+		"distance_km":13,
+		"distance_mi":8
+		},
+		{
+		"neighborhood":"Lake Como",
+		"city":"North Attleborough",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTH75",
+		"lat":41.929188,
+		"lon":-71.360298,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"South Walpole Street",
+		"city":"Sharon",
+		"state":"MA",
+		"country":"US",
+		"id":"KMASHARO8",
+		"lat":42.106144,
+		"lon":-71.223236,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"Harvestwood Drive",
+		"city":"West Bridgewater",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAWESTB15",
+		"lat":42.025345,
+		"lon":-71.016319,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"Sharon Heights",
+		"city":"Sharon",
+		"state":"MA",
+		"country":"US",
+		"id":"KMASHARO5",
+		"lat":42.110203,
+		"lon":-71.201454,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"",
+		"city":"Plainville",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAPLAIN6",
+		"lat":42.010017,
+		"lon":-71.368774,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"Northfield Drive",
+		"city":"West Bridgewater",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAWESTB16",
+		"lat":41.992878,
+		"lon":-71.000206,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"Baxter\u0027s Four Corners",
+		"city":"Plainville",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAPLAIN7",
+		"lat":41.987473,
+		"lon":-71.375412,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"N Elm St",
+		"city":"West Bridgewater",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAWBRID2",
+		"lat":42.040501,
+		"lon":-71.018997,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"APRSWXNET",
+		"city":"Stoughton",
+		"state":"MA",
+		"country":"US",
+		"id":"ME2022",
+		"lat":42.099998,
+		"lon":-71.099998,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"Streeter Hill",
+		"city":"Cumberland",
+		"state":"RI",
+		"country":"US",
+		"id":"KRICUMBE2",
+		"lat":42.002003,
+		"lon":-71.385384,
+		"distance_km":16,
+		"distance_mi":10
+		},
+		{
+		"neighborhood":"Rhodes Street",
+		"city":"Cumberland",
+		"state":"RI",
+		"country":"US",
+		"id":"KRICUMBE11",
+		"lat":42.008572,
+		"lon":-71.384651,
+		"distance_km":16,
+		"distance_mi":10
+		},
+		{
+		"neighborhood":"Dighton",
+		"city":"Dighton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMADIGHT2",
+		"lat":41.819710,
+		"lon":-71.129814,
+		"distance_km":17,
+		"distance_mi":10
+		},
+		{
+		"neighborhood":"Rock of Berkley Weather",
+		"city":"Berkley",
+		"state":"MA",
+		"country":"US",
+		"id":"KMABERKL1",
+		"lat":41.847778,
+		"lon":-71.053612,
+		"distance_km":17,
+		"distance_mi":10
+		},
+		{
+		"neighborhood":"North Easton",
+		"city":"Easton",
+		"state":"MA",
+		"country":"US",
+		"id":"KMAEASTO6",
+		"lat":42.029583,
+		"lon":-71.136421,
+		"distance_km":7,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Pickford Street",
+		"city":"North Attleborough",
+		"state":"MA",
+		"country":"US",
+		"id":"KMANORTH78",
+		"lat":41.982502,
+		"lon":-71.325096,
+		"distance_km":11,
+		"distance_mi":6
+		}
+		]
+		}
+		}
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Norton, MA",
+		"city":"Norton",
+		"state":"MA",
+		"state_name":"Massachusetts",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"02766",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"41.97221375",
+		"longitude":"-71.18708801",
+		"elevation":"30.00000000"
+		},
+		"observation_location": {
+		"full":"Wheaton College, Norton, Massachusetts",
+		"city":"Wheaton College, Norton",
+		"state":"Massachusetts",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"41.965969",
+		"longitude":"-71.183197",
+		"elevation":"80 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KMANORTO10",
+		"observation_time":"Last Updated on May 9, 9:04 PM EDT",
+		"observation_time_rfc822":"Sat, 09 May 2015 21:04:48 -0400",
+		"observation_epoch":"1431219888",
+		"local_time_rfc822":"Sat, 09 May 2015 21:19:13 -0400",
+		"local_epoch":"1431220753",
+		"local_tz_short":"EDT",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0400",
+		"weather":"Partly Cloudy",
+		"temperature_string":"60.8 F (16.0 C)",
+		"temp_f":60.8,
+		"temp_c":16.0,
+		"relative_humidity":"91%",
+		"wind_string":"From the SSW at 4.0 MPH Gusting to 7.0 MPH",
+		"wind_dir":"SSW",
+		"wind_degrees":205,
+		"wind_mph":4.0,
+		"wind_gust_mph":"7.0",
+		"wind_kph":6.4,
+		"wind_gust_kph":"11.3",
+		"pressure_mb":"1025",
+		"pressure_in":"30.28",
+		"pressure_trend":"+",
+		"dewpoint_string":"58 F (14 C)",
+		"dewpoint_f":58,
+		"dewpoint_c":14,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"60.8 F (16.0 C)",
+		"feelslike_f":"60.8",
+		"feelslike_c":"16.0",
+		"visibility_mi":"10.0",
+		"visibility_km":"16.1",
+		"solarradiation":"--",
+		"UV":"0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/US/MA/Norton.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KMANORTO10",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=41.965969,-71.183197",
+		"nowcast":""
+	}
+}
